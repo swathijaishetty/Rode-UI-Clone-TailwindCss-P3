@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+       
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <title>RØDE Microphones</title>
+
+        <link
+            rel="shortcut icon"
+            href="./assets/rode-favicon.svg"
+            type="image/x-icon"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <script>
+            tailwind.config ={
+                theme: {
+                    screens : {
+                        sm:'480px',
+                        md:"820px",
+                        lg: "1076px",
+                        xl:"1440px"
+                    },
+                    extend:{
+                        colors:{
+                            dark: '#004c3f',
+                            darker: '#002e25',
+                            light: '#f3fcf4',
+                            cream: '#fbf7ed',
+                            btn:'#008060',
+                            ash:'#848686'
+
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+                overflow-x: hidden;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!-- top section -->
+        <div
+        class="w-[99%] mx-auto hidden lg:block bg-[#FFFFFF] border-b border-gray-300 py-[5px] font-[Inter]">
+        <div class="max-w-[1140px] mx-auto">
+            <div class="flex items-center text-[12px] text-[#6b6b6b] gap-1">
+                <div>
+                    <svg
+                        width="13"
+                        height="18"
+                        viewBox="0 0 13 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M6.49992 0.557373C3.20963 0.557373 0.537109 3.22533 0.537109 6.49236C0.537109 11.0063 6.49992 17.4359 6.49992 17.4359C6.49992 17.4359 12.4627 11.0063 12.4627 6.49236C12.4627 3.22533 9.79021 0.557373 6.49992 0.557373Z"
+                            stroke="#484848"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                        <path
+                            d="M6.50048 9.7315C8.28058 9.7315 9.72362 8.23449 9.72362 6.38784C9.72362 4.54119 8.28058 3.04419 6.50048 3.04419C4.72039 3.04419 3.27734 4.54119 3.27734 6.38784C3.27734 8.23449 4.72039 9.7315 6.50048 9.7315Z"
+                            stroke="#484848"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                    </svg>
+                </div>
+
+                <div>
+                    <p class="m-0">EN</p>
+                </div>
+                <div class="flex justify-end w-full">
+                    <svg
+                        width="16"
+                        height="20"
+                        viewBox="0 0 16 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M12.4023 5.21899C12.4023 2.88051 10.4828 1 8.07994 1C5.67702 1 3.76465 2.88051 3.76465 5.21899C3.76465 7.52973 5.68413 9.41023 8.08704 9.41023C10.49 9.41023 12.4023 7.52973 12.4023 5.21899Z"
+                            stroke="#484848"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                        <path
+                            d="M1.14071 16.488C0.643067 17.6746 1.52461 19 2.85403 19H13.3117C14.6411 19 15.5226 17.6746 15.025 16.488C13.724 13.4626 11.1007 11.4155 8.0793 11.4155C5.04367 11.4155 2.41326 13.4626 1.14071 16.488Z"
+                            stroke="#484848"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- nav bar -->
+
+    <div
+    class="w-full bg-[#FFFFFF] sticky top-0 z-50 border-b border-slate-200"
+>
+    <div
+        class=" lg:block max-w-[1140px] mx-auto pt-[5px] font-[Inter]"
+    >
+        <nav class="flex items-center w-full h-[80px]">
+            <div class="pr-[150px] ml-10 lg:ml-0">
+                <svg
+                    version="1.1"
+                    id="Rode_Logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 792.9 220.2"
+                    xml:space="preserve"
+                    style="height: 24px"
+                >
+                    <g>
+                        <path
+                            d="M179.8,69.2c0-39.4-38.8-63.6-74.9-63.6H0v208.7h62.8V113.4l48.4,99.2l0.8,1.5h71.3l-49.8-87.8
+                C162.2,118.2,179.8,96.5,179.8,69.2z M62.8,35.8h18.4c20,0,34,14.2,34,34.4c0,29.2-16.7,35-45.7,35h-6.9V35.8H62.8z"
+                        ></path>
+                        <polygon
+                            points="717,181.1 717,123.8 785.4,123.8 785.4,90.5 717,90.5 717,39 789,39 789,5.6 654.3,5.6 654.3,214.3 792.9,214.3 
+                792.9,181.1 	"
+                        ></polygon>
+                        <path
+                            d="M525.4,5.6H433v208.7h101.9c62.5,0,102.8-39.4,102.8-100.5C637.4,51.1,590.3,5.6,525.4,5.6z M572.6,105.5
+                c0,38.8-15.4,80.1-58.8,80.1h-20.9V34.2h18.8C553.8,34.2,572.6,70,572.6,105.5z"
+                        ></path>
+                        <path
+                            d="M410.8,19.6L393.3,2.1l-21.5,21.5C353,8.9,328.8,0,302.3,0C240,0,191.4,48.3,191.4,110c0,26.7,9.2,50.9,24.6,69.8
+                l-21.1,21.1l17.5,17.5l21.3-21.3c18.8,14.4,42.5,23.1,68.6,23.1c62.3,0,110.9-48.2,110.9-109.9c0-26.3-8.8-50.2-23.8-68.8
+                L410.8,19.6z M302.4,27.3c19.4,0,30.7,12.7,37.3,28.6l-81.5,81.5c-1.5-10.4-1.9-20.4-1.9-27.5C256.3,85.2,260.9,27.3,302.4,27.3z
+                 M346.6,83.8c1.3,10,1.7,19.2,1.7,26.1c0,24.8-4.4,82.6-46.1,82.6c-19,0-30.2-12.1-36.9-27.7L346.6,83.8z"
+                        ></path>
+                    </g>
+                </svg>
+            </div>
+            <div
+                class=" hidden lg:flex lg:text-[14px] lg:items-center lg:gap-[50px] lg:uppercase"
+            >
+                <a href="#">Products</a>
+                <a href="#">User Guides</a>
+                <a href="#">Solutions</a>
+                <a href="#">Apparel</a>
+                <a href="#">Support</a>
+            </div>
+
+            <div class="mr-10 lg:mr-0 flex justify-end flex-1">
+                <svg
+                    data-v-084759c0=""
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M10.4629 20.0231C15.6892 20.0231 19.9259 15.7646 19.9259 10.5115C19.9259 5.25846 15.6892 1 10.4629 1C5.2367 1 1 5.25846 1 10.5115C1 15.7646 5.2367 20.0231 10.4629 20.0231Z"
+                        stroke="#484848"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                    ></path>
+                    <path
+                        d="M17.6455 17.6025L26.0002 26.0001"
+                        stroke="#484848"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                    ></path>
+                </svg>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- main section -->
+<div class="section1 relative mt-20  md:mt-0 ">
+    <div class="content-img">
+        <div class="bg-none md:bg-[url('./assets/rode-caster-pro-rgb.jpg')] bg-[#000000] h-[100%] md:h-[700px] relative md:bottom-[90px] lg:bottom-[0] md:w-full md:bg-center bg-top bg-no-repeat">
+        <div><img class="md:hidden relative bottom-[85px]" src="./assets/rode-rodecaster-pro-II-home-page-800x700-rgb.jpg"  alt=""></div>
+        <div class="content bg-black  ">
+              <div class="cls">
+                <img class="z-10 mx-auto md:absolute md:top-[150px] md:right-[20px] lg:right-[250px]" src="./assets/RODECasterProII_PL_PI_01.svg" width="540px" height="42px"  alt="">
+                <h1 class="text-white text-center p-5 text-2xl md:absolute md:top-[200px] md:right-[200px] lg:mr-44">The Revolution Is Here</h1>
+                <p class="text-center text-white md:absolute md:top-[280px] md:right-[70px] lg:mr-48">The RØDECaster Pro II is the world's most powerful all-in-one <br> audio solution for streamers, podcasters, musicians, and creators. <br> Take your content to the next level.</p>
+                <div class="buttons flex p-5">
+                    <button class="flex mx-auto md:absolute md:top-[430px] md:right-[300px]">
+                        <h1 class="text-[#ad9871] relative top-[5px] md:top-0 lg:mr-[200px] w-[150px]">LEARN MORE  <svg width="10px" class="fill-[#ad9871] ml-36 mt-[-20px] lg:mr-28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32.03 448c-11.75 0-23.05-6.469-28.66-17.69c-7.906-15.81-1.5-35.03 14.31-42.94l262.8-131.4L17.69 124.6C1.875 116.7-4.531 97.51 3.375 81.7c7.891-15.81 27.06-22.19 42.94-14.31l320 160C377.2 232.8 384 243.9 384 256c0 12.12-6.844 23.19-17.69 28.63l-320 160C41.72 446.9 36.83 448 32.03 448z"/></svg></h1>
+                    </button>
+                    <button class="bg-[#ad9871] lg:mr-52 mx-auto  rounded-full w-28 md:absolute md:top-[420px] p-2 md:right-[150px]">
+                        <h1 class="text-center text-white">BUY NOW</h1>
+                    </button>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+<!-- nth 100 section -->
+
+        <div class=" lg:mt-0 bg-[#c7c7c7] pb-28  md:mt-[-90px] lg:mt-0">
+            <div class=" lg:w-[140%] z-0 hidden lg:block">
+                <img src="./assets/rode-nth100-lifestyle-insitu-female-looking-down-grey-1920x700-rgb.jpg" class="" alt="">
+            </div>
+            <div class=" content mx-auto pt-10 z-10 w-[500px] md:w-[580px] lg:mt-[-450px] lg:ml-[200px]">
+                <img class="z-10 " src="./assets/NTH-100_PL_P_RGB_01.svg" width="540px" height="42px"  alt="">
+                <h1 class=" text-center p-5 text-2xl">Your Search For The Perfect Headphones Is Over</h1>
+                <p class="text-center text-[#758283] text-[18px]">Experience sound like never before with the NTH-100s. Exceptional  sonic performance, superior comfort and iconic looks that inspires creativity.</p>
+                <div class="buttons flex p-5">
+                    <button class="flex mx-auto">
+                        <h1 class="text-[#ad9871] font-bold ">LEARN MORE 
+                        <svg width="10px" class="fill-[#ad9871] ml-32 mt-[-20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32.03 448c-11.75 0-23.05-6.469-28.66-17.69c-7.906-15.81-1.5-35.03 14.31-42.94l262.8-131.4L17.69 124.6C1.875 116.7-4.531 97.51 3.375 81.7c7.891-15.81 27.06-22.19 42.94-14.31l320 160C377.2 232.8 384 243.9 384 256c0 12.12-6.844 23.19-17.69 28.63l-320 160C41.72 446.9 36.83 448 32.03 448z"/></svg>
+
+                        </h1>
+                    </button>
+                    <button class="bg-[#ad9871] mx-auto  rounded-full w-28 p-2 ml-[-50px] mt-[-10px]">
+                        <h1 class="text-center text-white ">BUY NOW</h1>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    <!-- nth USB section -->
+
+        <div class=" lg:mt-0  md:mt-[-90px] lg:mt-0">
+            <div class=" lg:w-[100%] z-0 ">
+                <img src="./assets/rode-nt-usb-webheader-v7-1920x700-rgb.jpg" class="" alt="">
+            </div>
+            <div class=" content mx-auto pt-10 z-10 w-[500px] md:w-[520px] xl:mt-[-450px]  lg:mt-[-380px] lg:ml-[700px] xl:ml-[940px]">
+                <img class="z-10 " src="./assets/NT-USB_PL_P_01.svg" width="540px" height="42px"  alt="">
+                <h1 class=" text-center p-5 text-2xl">Studio-Quality Recording, Made Simple</h1>
+                <p class="text-center text-[#758283] text-[18px]">The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.</p>
+                <div class="buttons flex p-5">
+                    <button class="flex mx-auto">
+                        <h1 class="text-[#ad9871] font-bold ">LEARN MORE 
+                        <svg width="10px" class="fill-[#ad9871] ml-32 mt-[-20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32.03 448c-11.75 0-23.05-6.469-28.66-17.69c-7.906-15.81-1.5-35.03 14.31-42.94l262.8-131.4L17.69 124.6C1.875 116.7-4.531 97.51 3.375 81.7c7.891-15.81 27.06-22.19 42.94-14.31l320 160C377.2 232.8 384 243.9 384 256c0 12.12-6.844 23.19-17.69 28.63l-320 160C41.72 446.9 36.83 448 32.03 448z"/></svg>
+
+                        </h1>
+                    </button>
+                    <button class="bg-[#ad9871] mx-auto  rounded-full w-28 p-2 ml-[-50px] mt-[-10px]">
+                        <h1 class="text-center text-white ">BUY NOW</h1>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- explore section -->
+
+        <div class="my-10 mx-10 lg:mt-48 ">
+            <h1 class="mx-auto text-4xl text-[#758283] font-bold lg:ml-[500px]">Explore The RØDE Range</h1>
+            <div class=" flex flex-col justify-center">
+                <div class="one mt-10 lg:ml-[140px] lg:mb-24 ">
+                    <img src="./assets/explore-microphone.png" class="z-0" alt="">
+                    <img src="./assets/microphone-text.svg" class="mt-[-60px] md:mt-[-180px] lg:mr-32" alt="">
+                </div>
+                <div class="one mt-10 lg:ml-[140px] lg:mb-24 ">
+                    <img src="./assets/explore-interface.jpg" class="z-0" alt="">
+                    <img src="./assets/interface-mixer-text.svg" class="mt-[-60px] md:mt-[-180px] lg:mr-28" alt="">
+                </div>
+                <div class="one mt-10 lg:ml-[140px] lg:mb-24 ">
+                    <img src="./assets/explore-software.png" class="z-0" alt="">
+                    <img src="./assets/software-text.svg" class="mt-[-60px] md:mt-[-180px] lg:mr-32" alt="">
+                </div>
+                <div class="one mt-10 lg:ml-[140px] lg:mb-24 ">
+                    <img src="./assets/explore-accessory.png" class="z-0" alt="">
+                    <img src="./assets/accessories-text.svg" class="mt-[-60px] md:mt-[-180px] lg:mr-32" alt="">
+                </div>
+
+            </div>
+        </div>
+<!-- latest from the rode blog section -->
+        <div>
+            <div>
+            <h1 class="ml-8 text-4xl mt-10 text-[#ad9970] md:mt-[160px] lg:mt-0 font-bold lg:ml-[500px] mb-10">Latest From The RØDE Blog</h1>
+                
+            </div>
+            <div class="bg-[#f8f8fb] pb-[60px]  pt-[50px] flex flex-row flex-wrap justify-around p-3 lg:w-[80%] md:w-[80%] mx-auto">
+                <div class="s1 text-center mx-3 mb-3 d-flex flex-column bg-white md:w-[500px]">
+                    <h1 class="text-xl text-center py-5">The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphones</h1>
+                    <img  class="w-[100]" src="./assets/thumbnail6.jpeg" alt="">
+                    <p class="text-lg my-3 p-3">We explore the difference between large- and small-diaphragm condenser microphones, and what each is best used for.</p>
+                    <button class="bg-[#ad9871] text-white  hover:bg-white hover:text-[#ad9871] hover:border-2 hover:border-[#ad9871] mx-auto rounded-full w-32  p-2 relative bottom-[10px] ">
+                        <h1 class="text-center ">LEARN MORE</h1>
+                    </button>
+    
+                </div>
+                <div class="s1 text-center mx-3 mb-3 d-flex flex-column bg-white lg:w-[500px] p-3">
+                    <h1 class="text-xl text-center py-5">What is a Condenser Microphone and When to Use One</h1>
+                    <img class="w-[100]" src="./assets/thumbnail.jpg" alt="">
+                    <p class="text-lg my-3 p-3">Learn more about the different types of condenser mics, how they work and the best applications for using them.</p>
+                    <button class="bg-[#ad9871] text-white  hover:bg-white hover:text-[#ad9871] hover:border-2 hover:border-[#ad9871] mx-auto rounded-full w-32  p-2 relative bottom-[10px] ">
+                        <h1 class="text-center ">LEARN MORE</h1>
+                    </button>
+    
+                </div>
+                <div class="s1 text-center mx-3 mb-3 d-flex flex-column bg-white lg:w-[500px] p-3">
+                    <h1 class="text-xl text-center py-5 ">Firmware Version 1.0.7 for the RØDECaster Pro II is Available Now</h1>
+                    <img class="w-[100]" src="./assets/rode-rodecaster-pro-II-on-black-front-580x509.jpg" alt="">
+                    <p class="text-lg my-3 p-3">Firmware version 1.0.7 includes key feature additions, such as custom routing for USB and Bluetooth outputs, and more.</p>
+                    <button class="bg-[#ad9871] text-white  hover:bg-white hover:text-[#ad9871] hover:border-2 hover:border-[#ad9871] mx-auto rounded-full w-32  p-2 relative bottom-[10px] ">
+                        <h1 class="text-center ">LEARN MORE</h1>
+                    </button>
+    
+                </div>
+                <div class="s1 text-center mx-3 mb-3 d-flex flex-column bg-white lg:w-[500px] p-3">
+                    <h1 class="text-xl text-center py-5 ">The RØDECaster Pro II Is Shipping Now</h1>
+                    <img class="w-[100]" src="./assets/rode-rodecaster-pro-II-on-black-front-on-580x509-rgb.jpg" alt="">
+                    <p class="text-lg my-3 p-3">We explore the difference between large- and small-diaphragm condenser microphones, and what each is best used for.</p>
+                    <button class="bg-[#ad9871] text-white  hover:bg-white hover:text-[#ad9871] hover:border-2 hover:border-[#ad9871] mx-auto rounded-full w-32  p-2 relative bottom-[10px] ">
+                        <h1 class="text-center ">LEARN MORE</h1>
+                    </button>
+                </div>
+    
+    
+            </div>
+        </div>
+
+        <!-- footer section -->
+
+        <footer class="hidden md:block">
+            <hr class="mx-0 my-16 line">
+            <div class="px-[100px] pb-[50px] flex justify-between flex-wrap md:w-[90%]  mx-auto">
+                <div class="img p-5">
+                    <img src="./assets/rode-footer-logo.svg" width="142px" class="md:ml-[220px] p-4 lg:ml-0" height="85px" alt="">
+                </div>
+                <div class="products p-5">
+                    <ul class="">
+                        <li class="font-semibold mb-3"><a href="#">Products</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Microphones</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Headphones</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Interfaces and mixers</a> </li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Accessories</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Software</a> </li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Apparel</a> </li>
+                    </ul>
+                </div>
+                <div class="Support p-5">
+                    <ul class="">
+                        <li class="font-semibold mb-3"><a href="#">Support</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Contact RØDE</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Service Centre</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Warranty</a> </li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Where to Buy</a></li>
+                    </ul>
+                </div>
+                <div class="Company & account p-5">
+                    <ul class="">
+                        <li class="font-semibold mb-3"><a href="#">Company</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">About RØDE</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">News and Info</a></li>
+                        <li class="hover:text-[#758283] mb-3"><a href="#">Job Oppurtunites</a> </li>
+                        <li class="font-semibold mb-3"><a href="#">Account</a></li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Manage your Account</a> </li>
+                        <li class="hover:text-[#758283] mb-2"><a href="#">Create Account</a> </li>
+                    </ul>
+                </div>
+                <div class="subscribe md:mx-auto p-5 pt-[30px] lg:w-[350px] ">
+                    <h1 class="text-center text-2xl font-bold pb-5 text-end">Subscribe to our latest news and offers</h1>
+                    <div class="btn  mx-auto w-[80px]">
+                        <button class="bg-[#ad9871] text-white  hover:bg-white hover:text-[#ad9871] hover:border-2 hover:border-[#ad9871] mx-auto rounded-full w-28  p-2 relative ">
+                            <h1 class="text-center font-semibold ">SIGN UP</h1>
+                        </button>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="handles lg:w-[80%] mx-auto flex flex-row flex-wrap justify-between px-[100px] pt-[50px] pb-[30px] border-t border-gray-300">
+                <div class="copyright  text-start p-5"><h1>© 2022 RØDE All Rights Reserved.</h1></div>
+                <div class="w-[250px] text-[12px] mx-auto  flex justify-between flex-row p-5">
+                    <h1>Privacy Policy</h1>
+                    <h1>|</h1>
+                    <h1 class="">Terms & Conditions</h1>
+                </div>
+                <div class="social w-[300px] p-5 ">
+                    <div class="flex justify-between">
+                     <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+                     <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                     <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                     <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
+                     <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a>   
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- mobile responsive -->
+        <div class=" md:hidden">
+            <div class="img p-5 mx-auto">
+                <img src="./assets/rode-footer-logo.svg" width="142px" class="md:ml-[220px] lg:ml-0 mx-auto" height="85px" alt="">
+            </div>
+        </div>
+       
+        <div class="links cursor-pointer block flex flex-col justify-between  md:hidden ">
+            <div class="one p-[20px]  flex justify-between w-full border-t border-gray-500">
+                <h1>Products</h1>
+                <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            </div>
+            <div class="one p-[20px]  flex justify-between w-full border-t border-gray-500">
+                <h1>Support</h1>
+                <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            </div>
+            <div class="one p-[20px]  flex justify-between w-full border-t border-gray-500">
+                <h1>Company</h1>
+                <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            </div>
+            <div class="one p-[20px]  flex justify-between w-full border-t border-b border-gray-500">
+                <h1>Account</h1>
+                <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer-bottom mb-10 md:hidden">
+    <div class="subscribe pt-[30px] pb-5 px-[20px] border-b border-gray-300 ">
+        <h1 class="text-center text-2xl font-bold pb-5">Subscribe to our latest news and offers</h1>
+        <div class="btn  mx-auto w-[113px]">
+            <button class="bg-[#ad9871] text-white  hover:bg-white hover:text-[#ad9871] hover:border-2 hover:border-[#ad9871] mx-auto rounded-full w-28  p-2 relative ">
+                <h1 class="text-center font-semibold ">SIGN UP</h1>
+            </button>
+        </div>
+    </div>
+    <div class="handles pt-[30px]">
+        <div class="w-[300px] mx-auto  flex justify-between flex-row">
+            <h1>Privacy Policy</h1>
+            <h1>|</h1>
+            <h1>Terms & Conditions</h1>
+        </div>
+        <div class="social px-[100px] py-[20px]  ">
+            <div class="flex justify-between">
+             <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg></a>
+             <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+             <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+             <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
+             <a href="#"><svg width="25px" class="fill-[#ad9871]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg></a>   
+            </div>
+        </div>
+        <div class="copyright px-[100px] text-center"><h1>© 2022 RØDE All Rights Reserved.</h1></div>
+    </div>
+</section>
+
+    
+</body>
